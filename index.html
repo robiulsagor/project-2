@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="relative">
+      <!-- button to add new note -->
+      <button
+        id="addBtn"
+        class="absolute right-2 top-2 bg-green-500 text-white font-bold p-2 rounded-lg"
+      >
+        <i class="fa-solid fa-plus"></i>
+        Add Note
+      </button>
+
+      <div
+        id="app"
+        class="w-full h-screen flex justify-center items-center gap-5 flex-wrap bg-gradient-to-br from-blue-700 to-green-300 overflow-auto py-10"
+      ></div>
+
+      <!-- item -->
+      <!-- <div class="w-[300px] h-[240px] rounded-lg overflow-hidden">
+        
+        <div
+          class="bg-gray-800 h-[40px] w-full flex items-center gap-6 justify-end px-3"
+        >
+          <i
+            class="fa-regular fa-floppy-disk text-white scale-125 cursor-pointer hover:opacity-50 transition duration-150"
+          ></i>
+          <i
+            class="fa-regular fa-trash-can text-white scale-125 cursor-pointer hover:opacity-50 transition duration-150"
+          ></i>
+        </div>
+
+       
+        <textarea
+          class="w-full h-[200px] bg-gray-700 outline-none p-2 text-white resize-none"
+          placeholder="Type your note here..."
+          autofocus
+        ></textarea>
+      </div> -->
+    </div>
+  </body>
+</html>
